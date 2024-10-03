@@ -1,0 +1,70 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Time Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="input-section">
+        <h2>Enter Free Time (hours) for Each Day</h2>
+        <button onclick="showFreeTimeInputs()">Input Free Time</button>
+
+        <div id="free-time-inputs" style="display: none;">
+            <label for="monday">Monday:</label>
+            <input type="number" id="monday" step="0.1"><br>
+
+            <label for="tuesday">Tuesday:</label>
+            <input type="number" id="tuesday" step="0.1"><br>
+
+            <label for="wednesday">Wednesday:</label>
+            <input type="number" id="wednesday" step="0.1"><br>
+
+            <label for="thursday">Thursday:</label>
+            <input type="number" id="thursday" step="0.1"><br>
+
+            <label for="friday">Friday:</label>
+            <input type="number" id="friday" step="0.1"><br>
+
+            <label for="saturday">Saturday:</label>
+            <input type="number" id="saturday" step="0.1"><br>
+
+            <label for="sunday">Sunday:</label>
+            <input type="number" id="sunday" step="0.1"><br>
+
+            <button onclick="confirmFreeTime()">Confirm Free Time</button>
+        </div>
+
+        <div id="task-section" style="display: none;">
+            <h2>Add Task</h2>
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name"><br>
+
+            <label for="task-duration">Duration (hours):</label>
+            <input type="number" id="task-duration" step="0.1"><br>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date"><br>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date"><br>
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+
+    <div id="schedule-table" style="display: none;">
+        <table id="schedule">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

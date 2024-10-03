@@ -1,0 +1,103 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main app container */
+#app {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff; /* Blue button background */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button corners */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add some space after the form */
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Input field corners */
+}
+
+/* Table layout for the schedule */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Table cell borders */
+}
+
+th {
+    background-color: #f0f0f0; /* Light background for headers */
+}
+
+td {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slight zebra striping for better readability */
+}
+
+/* Date column styling */
+.date-column {
+    width: 150px;
+    padding: 10px;
+    text-align: left;
+    background-color: #f0f0f0; /* Light background for date column */
+    border-right: 1px solid #ccc;
+}
+
+.mission-column {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+/* Container for the task inputs */
+#add-task-section {
+    margin-top: 20px;
+}
+
+/* Style for individual rows inside the mission columns (not used in this project, but matches layout aesthetic) */
+.mission-row {
+    display: flex;
+    justify-content: space-between;
+}
